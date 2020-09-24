@@ -27,9 +27,9 @@ gulp.task("scss", function() {
         .pipe(sass())
         .pipe(concat(config.output.cssName))
         .pipe(autoprefixer())
+        .pipe(gcmq())
         .pipe(gulpIf(!config.isDevelop, cleanCss()))
         .pipe(gulpIf(config.isDevelop, sourcemaps.write()))
-        .pipe(gcmq())
         .pipe(gulp.dest(config.output.path))
         .pipe(browserSync.stream());
 });

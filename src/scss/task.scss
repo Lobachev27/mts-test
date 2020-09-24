@@ -1,0 +1,244 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.task{
+  position: relative;
+  margin: 60px 0;
+  @media screen and (min-width: $tablet2) {
+    margin: 80px 0 100px;
+  }
+  &__nav{
+    margin-top: 30px;
+    @media screen and (min-width: $tablet1) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+      justify-content: center;
+    }
+  }
+  &__tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    height: 36px;
+    border: 1px solid $gray-btn;
+    border-radius: 36px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    @media screen and (min-width: $tablet1) {
+      width: auto;
+      padding: 0 20px;
+      margin: 0 12px 12px 0;
+    }
+    &.active{
+      color: $red-hover;
+    }
+    &:hover{
+      color: $white;
+      background-color: $red-hover;
+      border: 1px solid $red-hover;
+      transition: 0.3s;
+    }
+    &:last-child{
+      @media screen and (min-width: $tablet1) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__slider{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  & .swiper-container{
+    position: relative;
+    padding-bottom: 60px;
+    overflow: visible;
+    width: 100%;
+    margin-left: 0;
+    @media screen and (min-width: $desktop) {
+      overflow: hidden;
+      width: 1240px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  & .swiper-wrapper{
+    position: relative;
+    width: 100%;
+  }
+  & .swiper-slide{
+    width: 260px;
+    @media screen and (min-width: $tablet1) {
+      width: 277px;
+    }
+  }
+  & .swiper-button-disabled{
+    opacity: 0!important;
+  }
+  & .swiper-button-next,
+  & .swiper-button-prev{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    outline: none;
+    width: 36px;
+    height: 36px;
+    top: 100%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    opacity: 1;
+    &:hover{
+      transition: 0.3s;
+    }
+  }
+  & .swiper-button-prev{
+    background: url("../img/arrow.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    &:hover{
+      background: url("../img/arrow-hover.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+  }
+  & .swiper-button-next{
+    background: url("../img/arrow.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg) translateY(45%);
+    right: 0;
+    &:hover{
+      background: url("../img/arrow-hover.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
+    }
+  }
+  & .swiper-container-horizontal>.swiper-pagination-bullets{
+    position: absolute;
+    bottom: 14px;
+    text-align: left;
+    width: 250px;
+    padding: 0;
+    @media screen and (min-width: $tablet1) {
+      text-align: center;
+      width: 100%;
+      padding: 0 80px;
+    }
+  }
+  & .swiper-container-horizontal .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    align-items: center;
+    background-color: $gray-btn;
+    opacity: 1;
+    outline: none;
+    margin: 0 5px;
+    transition: all 0.3s;
+    &:hover{
+      background-color: $red-hover;
+      transition: all 0.3s;
+    }
+  }
+  & .swiper-container-horizontal .swiper-pagination-bullet-active {
+    background-color: $red-hover;
+  }
+  &__navigation{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 36px;
+  }
+  &__box{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 25px;
+    background-color: $white;
+    border: 1px solid $gray-btn;
+    border-radius: 10px;
+    transition: 0.5s;
+    &:hover{
+      border: 1px solid $white;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.5s;
+      & .btn-gray{
+        color: $white;
+        background-color: $red-hover;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__logo{
+    height: 17px;
+  }
+  &__name{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: $black;
+    height: 64px;
+    overflow: hidden;
+    margin: 15px 0 20px;
+  }
+  &__description{
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    height: 120px;
+    overflow: hidden;
+  }
+  &__advantage{
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    margin: 20px 0;
+    &.number{
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 500;
+      color: $black;
+      & span{
+        display: block;
+        font-size: 45px;
+        line-height: 40px;
+        margin-right: 5px;
+      }
+    }
+    &.price{
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $black;
+      & span{
+        font-size: 28px;
+        line-height: 28px;
+        margin: 0 5px;
+      }
+    }
+    &.none{
+      opacity: 0;
+    }
+  }
+  &__link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+}

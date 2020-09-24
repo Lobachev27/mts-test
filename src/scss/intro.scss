@@ -1,0 +1,62 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.intro{
+  position: relative;
+  background-color: $gray-intro;
+  line-height: 0;
+  & .container{
+    position: relative;
+    @media screen and (min-width: $tablet2) {
+      height: 400px;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    @media screen and (min-width: $tablet1) {
+      max-width: 570px;
+      padding-top: 50px;
+    }
+    @media screen and (min-width: $tablet2) {
+      z-index: 2;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 610px;
+      padding-top: 60px;
+    }
+  }
+  &__description{
+    color: $black;
+    font-weight: 500;
+    font-size: 4.3vw;
+    line-height: 1.4em;
+    margin-top: 2vw;
+    @media screen and (min-width: $tablet1) {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 0 20px;
+      order: -1;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  &__img{
+    display: block;
+    width: 85%;
+    margin: 20px auto 0;
+    @media screen and (min-width: $tablet1) {
+      width: 500px;
+    }
+    @media screen and (min-width: $tablet2) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 430px;
+      z-index: 1;
+    }
+  }
+}

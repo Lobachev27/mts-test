@@ -1,0 +1,36 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.title{
+  position: relative;
+  font-weight: 700;
+  color: $black;
+  &-intro{
+    font-size: 10vw;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    @media screen and (min-width: $tablet1) {
+      font-size: 48px;
+      line-height: 52px;
+    }
+    @media screen and (min-width: $tablet2) {
+      z-index: 2;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+  &-section{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin: 0 auto;
+    @media screen and (min-width: $tablet1) {
+      font-size: 32px;
+      line-height: 40px;
+      max-width: 450px;
+      text-align: center;
+    }
+  }
+}

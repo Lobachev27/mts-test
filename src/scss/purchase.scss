@@ -1,0 +1,92 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.purchase{
+  position: relative;
+  margin: 60px 0;
+  @media screen and (min-width: $tablet2) {
+    margin: 80px 0 100px;
+  }
+  &__wrapper{
+    @media screen and (min-width: $tablet2) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__info{
+    @media screen and (min-width: $tablet2) {
+      width: calc(100% - 400px);
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc(100% - 600px);
+    }
+  }
+  &__list{
+    list-style: none;
+    margin-top: 30px;
+  }
+  &__item{
+    position: relative;
+    color: $black;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+    }
+    &.business{
+      &:before{
+        background: url("../img/purchase-icon-1.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &.payment{
+      &:before{
+        background: url("../img/purchase-icon-2.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &.score{
+      &:before{
+        background: url("../img/purchase-icon-3.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &.buy{
+      &:before{
+        background: url("../img/purchase-icon-4.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &.number{
+      &:before{
+        background: url("../img/purchase-icon-5.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+  &__img{
+    display: none;
+    @media screen and (min-width: $tablet2) {
+      display: block;
+      width: 400px;
+      height: 336px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 522px;
+      height: 439px;
+    }
+  }
+}

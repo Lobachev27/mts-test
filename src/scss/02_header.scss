@@ -1,0 +1,109 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.header{
+  position: relative;
+  z-index: 10;
+  &__top{
+    position: relative;
+    background-color: $gray-intro;
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+    & .container{
+      height: 44px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  &__bottom{
+    position: relative;
+    background-color: $white;
+    box-shadow: 0 8px 6px -6px rgba(110, 119, 130, 0.25);
+    & .container{
+      height: 72px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__city,
+  &__feedback{
+    display: block;
+    font-size: 14px;
+    margin-left: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+      color: $red-hover;
+      transition: 0.3s;
+    }
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    & img{
+      width: 75px;
+    }
+    & span{
+      font-size: 20px;
+      line-height: 24px;
+      color: $red;
+      margin-left: 10px;
+      display: none;
+      @media screen and (min-width: $desktop) {
+        display: block;
+      }
+    }
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    display: none;
+    transition: 0.3s;
+    @media screen and (min-width: $desktop) {
+      display: block;
+      margin-left: 72px;
+    }
+    &:hover{
+      color: $red-hover;
+      transition: 0.3s;
+    }
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    & img{
+      width: 40px;
+    }
+    & span{
+      font-size: 16px;
+      line-height: 24px;
+      color: $black;
+      margin-left: 10px;
+      display: none;
+      @media screen and (min-width: $desktop) {
+        display: block;
+        margin-right: 12px;
+      }
+    }
+  }
+  &__menu{
+    width: 20px;
+    height: 16px;
+    background: url("../img/menu.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 25px;
+    cursor: pointer;
+    @media screen and (min-width: $tablet1) {
+      margin-left: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+}

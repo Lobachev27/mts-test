@@ -9,15 +9,501 @@
   <meta name="title" content=""/>
   <meta name="description" content=""/>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-  <link rel="stylesheet" href="https://assets.flocktory.com/fonts/1554/2daf561d38bedc1e6bf7d3a5040493b1f7275648/stylesheet.css">
-  <link rel="stylesheet" href="https://assets.flocktory.com/fonts/1554/5b477b31dc65e28f09c71e91f26b6b640d18ff30/stylesheet.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./favicon.ico">
 </head>
 
 <body>
-
+<header>
+  <div class="header__top">
+    <div class="container">
+      <a class="header__city" href="javascript:void(0);"">Москва</a>
+      <a class="header__feedback" href="javascript:void(0);">Обратная связь</a>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <a class="header__logo" href="javascript:void(0);">
+        <img src="./img/logo.svg">
+        <span>Бизнес маркет</span>
+      </a>
+      <a class="header__link" href="javascript:void(0);">Онлайн-сервисы</a>
+      <a class="header__user" href="javascript:void(0);">
+        <img src="./img/user.svg">
+        <span>Личный кабинет</span>
+      </a>
+      <div class="header__menu"></div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="intro">
+    <div class="container">
+      <div class="intro__info">
+        <h1 class="title title-intro">Цифровые решения для вашего бизнеса</h1>
+        <div class="intro__description">Покупайте бизнес сервисы онлайн,<br> оплатив с мобильного счета вашей организации</div>
+        <a class="btn btn-red btn-intro" href="javascript:void(0);">Смотреть все сервисы</a>
+      </div>
+      <img class="intro__img" src="./img/intro.png">
+    </div>
+  </section>
+  <section class="task">
+    <div class="container">
+      <h2 class="title title-section">Какую задачу вы решаете?</h2>
+      <div class="task__wrapper">
+        <nav class="task__nav">
+          <a class="task__tab" href="#promotion">Реклама и продвижение</a>
+          <a class="task__tab" href="#automation">Автоматизация процессов</a>
+          <a class="task__tab" href="#it">IT и безопасность</a>
+          <a class="task__tab" href="#clients">Работа с клиентской базой</a>
+        </nav>
+        <div id="promotion" class="task__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Голосовой<br> робот</div>
+                  <div class="task__description">Облачная платформа голосового робота
+                    для совершения автоматических звонков
+                    по готовым сценариям</div>
+                  <div class="task__advantage number"><span>10</span> звонков<br> бесплатно</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС<br> Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Цифровой<br> ассистент</div>
+                  <div class="task__description">Наймите электронного сотрудника для общения
+                    с клиентами. Готовые решения для корпоративных клиентов МТС</div>
+                  <div class="task__advantage none"></div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="task__navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div id="automation" class="task__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС<br> Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Цифровой<br> ассистент</div>
+                  <div class="task__description">Наймите электронного сотрудника для общения
+                    с клиентами. Готовые решения для корпоративных клиентов МТС</div>
+                  <div class="task__advantage none"></div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Голосовой<br> робот</div>
+                  <div class="task__description">Облачная платформа голосового робота
+                    для совершения автоматических звонков
+                    по готовым сценариям</div>
+                  <div class="task__advantage number"><span>10</span> звонков<br> бесплатно</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="task__navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div id="it" class="task__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Цифровой<br> ассистент</div>
+                  <div class="task__description">Наймите электронного сотрудника для общения
+                    с клиентами. Готовые решения для корпоративных клиентов МТС</div>
+                  <div class="task__advantage none"></div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Голосовой<br> робот</div>
+                  <div class="task__description">Облачная платформа голосового робота
+                    для совершения автоматических звонков
+                    по готовым сценариям</div>
+                  <div class="task__advantage number"><span>10</span> звонков<br> бесплатно</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС<br> Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="task__navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div id="clients" class="task__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo-2.svg">
+                  <div class="task__name">Push for site</div>
+                  <div class="task__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать
+                    их в покупателей</div>
+                  <div class="task__advantage price">от <span>1592</span> ₽</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Голосовой<br> робот</div>
+                  <div class="task__description">Облачная платформа голосового робота
+                    для совершения автоматических звонков
+                    по готовым сценариям</div>
+                  <div class="task__advantage number"><span>10</span> звонков<br> бесплатно</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">МТС<br> Коммуникатор</div>
+                  <div class="task__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения
+                    с клиентами</div>
+                  <div class="task__advantage price">от <span>3 180</span> ₽/мес</div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="task__box">
+                  <img class="task__logo" src="./img/logo.svg">
+                  <div class="task__name">Цифровой<br> ассистент</div>
+                  <div class="task__description">Наймите электронного сотрудника для общения
+                    с клиентами. Готовые решения для корпоративных клиентов МТС</div>
+                  <div class="task__advantage none"></div>
+                  <button class="btn btn-gray btn-task" type="button">Подробнее</button>
+                  <a class="task__link" href="javascript:void(0);"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="task__navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <h2 class="title title-section">Популярные сервисы</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <div class="services__caption">МТС Маркетолог</div>
+          <div class="services__description">Используйте различные каналы коммуникации: SMS, E-mail, Viber, Баннеры, Социальные сети</div>
+          <img class="services__img" src="./img/services-1.svg">
+          <a class="services__link" href="javascript:void(0);"></a>
+        </li>
+        <li class="services__item">
+          <div class="services__caption">Бесплатный вызов 8800</div>
+          <div class="services__description">У надежного бизнеса всегда есть номер 8800</div>
+          <img class="services__img" src="./img/services-2.svg">
+          <a class="services__link" href="javascript:void(0);"></a>
+        </li>
+        <li class="services__item">
+          <div class="services__caption">#CloudMTS</div>
+          <div class="services__description">Экосистема облачных сервисов для крупного бизнеса и корпораций</div>
+          <img class="services__img" src="./img/services-3.svg">
+          <a class="services__link" href="javascript:void(0);"></a>
+        </li>
+        <li class="services__item">
+          <div class="services__caption">Виртуальная АТС</div>
+          <div class="services__description">Простой способ телефонизации офиса без дополнительных затрат на оборудование</div>
+          <img class="services__img" src="./img/services-4.svg">
+          <a class="services__link" href="javascript:void(0);"></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="purchase">
+    <div class="container">
+      <h2 class="title title-section">Покупка с корпоративного счета в пару кликов</h2>
+      <div class="purchase__wrapper">
+        <div class="purchase__info">
+          <ul class="purchase__list">
+            <li class="purchase__item business">В Бизнес маркете вы можете купить полезные сервисы для бизнеса онлайн</li>
+            <li class="purchase__item payment">Оплата с вашего корпоративного мобильного счета</li>
+            <li class="purchase__item score">Счет за услуги в привычном формате</li>
+            <li class="purchase__item buy">Покупка и доступ к услугам в режиме онлайн</li>
+            <li class="purchase__item number">Просто выберите номер корпоративный мобильный номер,
+              с которого вы хотите оплатить бизнес услугу. Онлайн сервисы предоставляются сразу же после оплаты.</li>
+          </ul>
+          <a class="btn btn-red btn-purchase" href="javascript:void(0);">Смотреть все сервисы</a>
+        </div>
+        <img class="purchase__img" src="./img/purchase.png">
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__info">
+        <div class="footer__caption">Бизнес маркет</div>
+        <div class="footer__description">Покупайте бизнес сервисы онлайн, оплатив с мобильного счета вашей организации</div>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__column">
+          <div class="footer__name">Поддержка</div>
+          <nav class="footer__nav">
+            <a class="footer__link" href="javascript:void(0);">Оплата и доступ к сервисам</a>
+            <a class="footer__link" href="javascript:void(0);">Правовая информация</a>
+            <a class="footer__link" href="javascript:void(0);">Обратная связь</a>
+            <a class="footer__link" href="javascript:void(0);">Контакты</a>
+            <a class="footer__link" href="javascript:void(0);">Перейти на сайт mts.ru</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__name">Реклама и продвижение</div>
+          <nav class="footer__nav">
+            <a class="footer__link" href="javascript:void(0);">МТС коммуникатор </a>
+            <a class="footer__link" href="javascript:void(0);">Цифровой ассистент</a>
+            <a class="footer__link" href="javascript:void(0);">Голосовой робот</a>
+            <a class="footer__link" href="javascript:void(0);">Push for site</a>
+            <a class="footer__link" href="javascript:void(0);">Анализ геоданных</a>
+            <a class="footer__link" href="javascript:void(0);">TVBit</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__name">Автоматизация процессов</div>
+          <nav class="footer__nav">
+            <a class="footer__link" href="javascript:void(0);">Проверка контрагентов</a>
+            <a class="footer__link" href="javascript:void(0);">Конструктор документов</a>
+            <a class="footer__link" href="javascript:void(0);">CRM Простой бизнес</a>
+            <a class="footer__link" href="javascript:void(0);">Анализ геоданных</a>
+            <a class="footer__link" href="javascript:void(0);">Видеонаблюдение (Larga)</a>
+            <a class="footer__link" href="javascript:void(0);">Мобильные сотрудники</a>
+            <a class="footer__link" href="javascript:void(0);">Virtual POS</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__name">IT и безопасность</div>
+          <nav class="footer__nav">
+            <a class="footer__link" href="javascript:void(0);">Антивирус Касперского</a>
+            <a class="footer__link" href="javascript:void(0);">Антивирус eset</a>
+            <a class="footer__link" href="javascript:void(0);">Aнтивирус doctorweb</a>
+            <a class="footer__link" href="javascript:void(0);">MDM</a>
+            <a class="footer__link" href="javascript:void(0);">Видеонаблюдение</a>
+            <a class="footer__link" href="javascript:void(0);">Виртуальный сервер </a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__name">Работа с клиентами</div>
+          <nav class="footer__nav">
+            <a class="footer__link" href="javascript:void(0);">Голосовой робот</a>
+            <a class="footer__link" href="javascript:void(0);">Цифровой ассистент</a>
+            <a class="footer__link" href="javascript:void(0);">CRM простой бизнес</a>
+            <a class="footer__link" href="javascript:void(0);">МТС коммуникатор</a>
+            <a class="footer__link" href="javascript:void(0);">Видеонаблюдение</a>
+            <a class="footer__link" href="javascript:void(0);">Виртуальный сервер </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__copyright">© 2019 ПАО «МТС». Все права защищены.</div>
+    </div>
+  </div>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/script.js"></script>
